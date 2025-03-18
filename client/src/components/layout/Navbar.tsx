@@ -6,8 +6,8 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/">
-          <span className="text-2xl font-bold tracking-tighter">Mr Freedo the Artist</span>
+        <Link href="/about">
+          <span className="text-2xl font-bold tracking-tighter cursor-pointer hover:text-primary transition-colors">Mr Freedo the Artist</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
