@@ -12,7 +12,7 @@ export default function Music() {
         <h1 className="text-4xl font-bold mb-8">Music</h1>
         <p className="text-muted-foreground mb-12">
           Explore the latest tracks and albums from LANI COLORS. Click on any track to
-          listen on Spotify.
+          listen on YouTube.
         </p>
         <MusicGrid />
       </motion.div>
