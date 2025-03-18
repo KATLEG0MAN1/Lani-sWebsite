@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-muted-foreground">
-              Email: contact@golflefleur.com<br />
+              Email: contact@mrfreedo.com<br />
               Phone: +1 (555) 123-4567
             </p>
           </div>
@@ -18,20 +18,20 @@ export function Footer() {
             <div className="space-y-2 text-muted-foreground">
               <a href="#" className="block hover:text-primary">Instagram</a>
               <a href="#" className="block hover:text-primary">Twitter</a>
-              <a href="#" className="block hover:text-primary">Facebook</a>
+              <a href="#" className="block hover:text-primary">YouTube</a>
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4">Music Platforms</h3>
             <div className="space-y-2 text-muted-foreground">
-              <a href="#" className="block hover:text-primary">Privacy Policy</a>
-              <a href="#" className="block hover:text-primary">Terms of Service</a>
-              <a href="#" className="block hover:text-primary">Returns</a>
+              <a href="#" className="block hover:text-primary">Spotify</a>
+              <a href="#" className="block hover:text-primary">Apple Music</a>
+              <a href="#" className="block hover:text-primary">SoundCloud</a>
             </div>
           </div>
         </div>
         <div className="mt-8 text-center text-muted-foreground">
-          © 2024 GOLF le FLEUR*. All rights reserved.
+          © 2024 Mr Freedo the Artist. All rights reserved.
         </div>
       </div>
     </footer>

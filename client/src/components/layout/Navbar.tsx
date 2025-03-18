@@ -7,13 +7,13 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <a className="text-2xl font-bold tracking-tighter">Mr Freedo the Artist</a>
+          <span className="text-2xl font-bold tracking-tighter">Mr Freedo the Artist</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="/"><a className="hover:text-primary transition-colors">Home</a></Link>
-          <Link href="/music"><a className="hover:text-primary transition-colors">Music</a></Link>
-          <Link href="/about"><a className="hover:text-primary transition-colors">About</a></Link>
+          <Link href="/"><span className="hover:text-primary transition-colors">Home</span></Link>
+          <Link href="/music"><span className="hover:text-primary transition-colors">Music</span></Link>
+          <Link href="/about"><span className="hover:text-primary transition-colors">About</span></Link>
           <div className="flex items-center space-x-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">

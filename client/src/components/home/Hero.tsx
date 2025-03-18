@@ -10,13 +10,13 @@ export function Hero() {
         className="absolute inset-0"
       >
         <img
-          src="https://images.unsplash.com/photo-1676495906154-96415c612630"
+          src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
           alt="Hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/50" />
       </motion.div>
-      
+
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -25,10 +25,10 @@ export function Hero() {
       >
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Discover Luxury
+            Mr Freedo the Artist
           </h1>
           <p className="text-lg md:text-xl text-white/90">
-            Exclusive collection of premium fashion and accessories
+            Experience the vibrant sounds of LANI COLORS
           </p>
         </div>
       </motion.div>
