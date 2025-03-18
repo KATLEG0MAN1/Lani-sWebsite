@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-muted-foreground">
-              Email: contact@mrfreedo.com<br />
+              Email: contact@codee.com<br />
               Phone: +1 (555) 123-4567
             </p>
           </div>
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center text-muted-foreground">
-          © 2024 Mr Freedo the Artist. All rights reserved.
+          © 2024 CODEe (COME OUTSIDE DIRECTIVE ENTERTAINMENT). All rights reserved.
         </div>
       </div>
     </footer>

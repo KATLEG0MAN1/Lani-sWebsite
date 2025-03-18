@@ -7,7 +7,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/about">
-          <span className="text-2xl font-bold tracking-tighter cursor-pointer hover:text-primary transition-colors">Mr Freedo the Artist</span>
+          <span className="text-2xl font-bold tracking-tighter cursor-pointer hover:text-primary transition-colors">CODEe</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">

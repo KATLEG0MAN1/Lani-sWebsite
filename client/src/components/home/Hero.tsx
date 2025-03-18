@@ -25,10 +25,10 @@ export function Hero() {
       >
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Mr Freedo the Artist
+            CODEe
           </h1>
           <p className="text-lg md:text-xl text-white/90">
-            Experience the vibrant sounds of LANI COLORS
+            COME OUTSIDE DIRECTIVE ENTERTAINMENT
           </p>
         </div>
       </motion.div>
