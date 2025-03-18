@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Home from "@/pages/Home";
-import Product from "@/pages/Product";
+import Music from "@/pages/Music";
 import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
@@ -16,7 +16,7 @@ function Router() {
       <main className="flex-1">
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/product/:id" component={Product} />
+          <Route path="/music" component={Music} />
           <Route path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>

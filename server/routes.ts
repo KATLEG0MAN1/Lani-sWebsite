@@ -4,17 +4,17 @@ import { storage } from "./storage";
 import { insertSubscriberSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  app.get("/api/products", async (_req, res) => {
-    const products = await storage.getProducts();
-    res.json(products);
+  app.get("/api/tracks", async (_req, res) => {
+    const tracks = await storage.getTracks();
+    res.json(tracks);
   });
 
-  app.get("/api/products/:id", async (req, res) => {
-    const product = await storage.getProduct(Number(req.params.id));
-    if (!product) {
-      return res.status(404).json({ message: "Product not found" });
+  app.get("/api/tracks/:id", async (req, res) => {
+    const track = await storage.getTrack(Number(req.params.id));
+    if (!track) {
+      return res.status(404).json({ message: "Track not found" });
     }
-    res.json(product);
+    res.json(track);
   });
 
   app.post("/api/subscribe", async (req, res) => {

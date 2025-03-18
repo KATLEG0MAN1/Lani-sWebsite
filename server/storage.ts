@@ -1,54 +1,53 @@
-import { products, subscribers, type Product, type InsertProduct, type Subscriber, type InsertSubscriber } from "@shared/schema";
+import { tracks, subscribers, type Track, type InsertTrack, type Subscriber, type InsertSubscriber } from "@shared/schema";
 
 export interface IStorage {
-  getProducts(): Promise<Product[]>;
-  getProduct(id: number): Promise<Product | undefined>;
+  getTracks(): Promise<Track[]>;
+  getTrack(id: number): Promise<Track | undefined>;
   addSubscriber(subscriber: InsertSubscriber): Promise<Subscriber>;
 }
 
 export class MemStorage implements IStorage {
-  private products: Map<number, Product>;
+  private tracks: Map<number, Track>;
   private subscribers: Map<number, Subscriber>;
-  private currentProductId: number;
+  private currentTrackId: number;
   private currentSubscriberId: number;
 
   constructor() {
-    this.products = new Map();
+    this.tracks = new Map();
     this.subscribers = new Map();
-    this.currentProductId = 1;
+    this.currentTrackId = 1;
     this.currentSubscriberId = 1;
 
-    // Initialize with sample products
-    const sampleProducts: InsertProduct[] = [
+    // Initialize with sample tracks
+    const sampleTracks: InsertTrack[] = [
       {
-        name: "Classic Leather Loafers",
-        description: "Handcrafted luxury leather loafers",
-        price: 29900,
-        imageUrl: "https://images.unsplash.com/photo-1588186939549-c087e0796efd",
-        category: "shoes"
+        title: "LANI COLORS - Spectrum",
+        description: "A vibrant journey through sound and emotion",
+        spotifyUrl: "https://open.spotify.com/track/example1",
+        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
+        category: "Single"
       },
       {
-        name: "Silk Evening Dress",
-        description: "Elegant silk dress for special occasions",
-        price: 89900,
-        imageUrl: "https://images.unsplash.com/photo-1592914637125-28479601c75a",
-        category: "dresses"
+        title: "LANI COLORS - Rainbow",
+        description: "Experience the full spectrum of musical artistry",
+        spotifyUrl: "https://open.spotify.com/track/example2",
+        imageUrl: "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
+        category: "Album"
       }
-      // Add more sample products as needed
     ];
 
-    sampleProducts.forEach(product => {
-      const id = this.currentProductId++;
-      this.products.set(id, { ...product, id });
+    sampleTracks.forEach(track => {
+      const id = this.currentTrackId++;
+      this.tracks.set(id, { ...track, id });
     });
   }
 
-  async getProducts(): Promise<Product[]> {
-    return Array.from(this.products.values());
+  async getTracks(): Promise<Track[]> {
+    return Array.from(this.tracks.values());
   }
 
-  async getProduct(id: number): Promise<Product | undefined> {
-    return this.products.get(id);
+  async getTrack(id: number): Promise<Track | undefined> {
+    return this.tracks.get(id);
   }
 
   async addSubscriber(insertSubscriber: InsertSubscriber): Promise<Subscriber> {
