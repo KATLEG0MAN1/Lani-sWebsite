@@ -21,6 +21,13 @@ export class MemStorage implements IStorage {
     // Initialize with sample tracks
     const sampleTracks: InsertTrack[] = [
       {
+        title: "LANI COLORS - Come Alive",
+        description: "An energetic anthem that captures the essence of living life to the fullest",
+        spotifyUrl: "https://open.spotify.com/track/6QOkUYbC2Qc0XSsXR1vDDQ",
+        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
+        category: "Single"
+      },
+      {
         title: "LANI COLORS - Spectrum",
         description: "A vibrant journey through sound and emotion",
         spotifyUrl: "https://open.spotify.com/track/example1",
