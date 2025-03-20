@@ -9,8 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-muted-foreground">
-              Email: contact@codee.com<br />
-              Phone: +1 (555) 123-4567
+              Email: FreedotheArtist@gmail.com
             </p>
           </div>
           <div>
