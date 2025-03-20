@@ -9,10 +9,11 @@ export function Hero() {
         transition={{ duration: 1 }}
         className="absolute inset-0"
       >
-        <img
-          src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
-          alt="Hero"
-          className="w-full h-full object-cover"
+        <div 
+          style={{ backgroundImage: "url('/images/codee-silhouette.jpg')" }}
+          className="w-full h-full bg-cover bg-center"
+          role="img"
+          aria-label="Hero background"
         />
         <div className="absolute inset-0 bg-black/50" />
       </motion.div>

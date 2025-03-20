@@ -24,21 +24,21 @@ export class MemStorage implements IStorage {
         title: "LANI COLORS - Come Alive",
         description: "An energetic anthem that captures the essence of living life to the fullest",
         videoUrl: "https://www.youtube.com/watch?v=JecrUel-fKw&list=OLAK5uy_nuxS0Xu_7RAuYMjjl0n1L0slUatar_TEY&index=1&pp=8AUB",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
+        imageUrl: "/images/codee-silhouette.jpg",
         category: "Single"
       },
       {
         title: "LANI COLORS - Spectrum",
         description: "A vibrant journey through sound and emotion",
         videoUrl: "https://www.youtube.com/watch?v=example1",
-        imageUrl: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
+        imageUrl: "/images/codee-tree.jpg",
         category: "Single"
       },
       {
         title: "LANI COLORS - Rainbow",
         description: "Experience the full spectrum of musical artistry",
         videoUrl: "https://www.youtube.com/watch?v=example2",
-        imageUrl: "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
+        imageUrl: "/images/codee-studio.jpg",
         category: "Album"
       }
     ];

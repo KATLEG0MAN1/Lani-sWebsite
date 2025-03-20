@@ -13,16 +13,16 @@ export default function About() {
 
         <div className="prose prose-lg">
           <p className="text-xl font-medium mb-6">
-            COME OUTSIDE DIRECTIVE ENTERTAINMENT (CODEe) was founded by Xolani Buyeye, 
+            COME OUTSIDE DIRECTIVE ENTERTAINMENT (CODEe) was founded by Xolani Buyeye,
             known professionally as Freedo and Lani Colors, born on May 30th, 2000.
-            This visionary artist and creative platform has been pushing the boundaries 
+            This visionary artist and creative platform has been pushing the boundaries
             of musical expression since its inception.
           </p>
 
           <div className="my-8">
             <img
-              src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745"
-              alt="CODEe"
+              src="/images/codee-studio.jpg"
+              alt="CODEe Studio"
               className="rounded-lg w-full"
             />
           </div>
