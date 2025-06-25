@@ -1,11 +1,4 @@
-import {
-  tracks,
-  subscribers,
-  type Track,
-  type InsertTrack,
-  type Subscriber,
-  type InsertSubscriber,
-} from "@shared/schema";
+import { tracks, subscribers, type Track, type InsertTrack, type Subscriber, type InsertSubscriber } from "@shared/schema";
 
 export interface IStorage {
   getTracks(): Promise<Track[]>;
@@ -26,34 +19,31 @@ export class MemStorage implements IStorage {
     this.currentSubscriberId = 1;
 
     // Initialize with sample tracks
-    //this is where you can add more tracks
     const sampleTracks: InsertTrack[] = [
       {
         title: "LANI COLORS - Come Alive",
-        description:
-          "An energetic anthem that captures the essence of living life to the fullest",
-        videoUrl:
-          "https://www.youtube.com/watch?v=JecrUel-fKw&list=OLAK5uy_nuxS0Xu_7RAuYMjjl0n1L0slUatar_TEY&index=1&pp=8AUB",
+        description: "An energetic anthem that captures the essence of living life to the fullest",
+        videoUrl: "https://www.youtube.com/watch?v=JecrUel-fKw&list=OLAK5uy_nuxS0Xu_7RAuYMjjl0n1L0slUatar_TEY&index=1&pp=8AUB",
         imageUrl: "/images/codee-silhouette.jpg",
-        category: "Single",
+        category: "Single"
       },
       {
         title: "LANI COLORS - Spectrum",
         description: "A vibrant journey through sound and emotion",
         videoUrl: "https://www.youtube.com/watch?v=example1",
         imageUrl: "/images/codee-tree.jpg",
-        category: "Single",
+        category: "Single"
       },
       {
         title: "LANI COLORS - Rainbow",
         description: "Experience the full spectrum of musical artistry",
         videoUrl: "https://www.youtube.com/watch?v=example2",
         imageUrl: "/images/codee-studio.jpg",
-        category: "Album",
-      },
+        category: "Album"
+      }
     ];
 
-    sampleTracks.forEach((track) => {
+    sampleTracks.forEach(track => {
       const id = this.currentTrackId++;
       this.tracks.set(id, { ...track, id });
     });
