@@ -6,6 +6,16 @@
 (() => {
   'use strict';
 
+  /* ─────────────────────────────────────────────────────────
+     WHERE THE IDEAS FORM POSTS
+     GitHub Pages is static — there is no server to receive a
+     form, so this has to go to a form service. Paste the
+     endpoint here and the form starts working; see README.
+     Left empty, the section shows an Instagram route instead
+     of a form that silently swallows what people write.
+     ───────────────────────────────────────────────────────── */
+  const IDEAS_ENDPOINT = '';
+
   const $  = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -359,6 +369,13 @@
         `${state.releases.length} releases · ${state.releases.reduce((n, r) => n + r.trackCount, 0)} tracks`;
       $('#footUpdated').textContent = data.updated || '—';
 
+      const years = state.releases.map((r) => +r.year).filter(Boolean);
+      const tracks = state.releases.reduce((n, r) => n + r.trackCount, 0);
+      $('#infoStats').innerHTML = `
+        <div><dt>Releases</dt><dd>${state.releases.length}</dd></div>
+        <div><dt>Tracks</dt><dd>${tracks}</dd></div>
+        <div><dt>Active</dt><dd>${Math.min(...years)}&ndash;${Math.max(...years)}</dd></div>`;
+
       const slug = location.hash.slice(1);
       if (slug && state.releases.some((r) => r.slug === slug)) openSheet(slug, false);
     })
@@ -367,4 +384,71 @@
         `<p class="loading">Couldn't load the catalogue. If you opened this file directly,
          serve the folder instead — <code>npx serve .</code> — since fetch() needs http.</p>`;
     });
+  /* ══════════════════════════════════════════════════════
+     IDEAS
+     ══════════════════════════════════════════════════════ */
+  (() => {
+    const form = $('#ideasForm');
+    if (!form) return;
+
+    const status = $('#ideaStatus');
+    const send = $('#ideaSend');
+    const body = $('#ideaBody');
+
+    /* Nothing to post to yet — so don't take people's writing and
+       drop it. Point them somewhere that actually reaches him. */
+    if (!IDEAS_ENDPOINT) {
+      const box = document.createElement('div');
+      box.className = 'ideas__fallback';
+      box.innerHTML = `
+        <p>The ideas box isn't hooked up yet. Until it is, send it straight to him —
+           he reads his DMs.</p>
+        <a class="btn btn--hot" href="https://www.instagram.com/lani_colors/"
+           target="_blank" rel="noopener">Message @lani_colors</a>`;
+      form.replaceWith(box);
+      return;
+    }
+
+    const say = (msg, kind) => {
+      status.textContent = msg;
+      status.className = 'ideas__status' + (kind ? ' is-' + kind : '');
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (form._honey && form._honey.value) return;   // a bot filled the trap
+
+      const field = body.closest('.field');
+      if (!body.value.trim()) {
+        field.classList.add('is-bad');
+        body.focus();
+        say('Write the idea first.', 'bad');
+        return;
+      }
+      field.classList.remove('is-bad');
+
+      send.disabled = true;
+      say('Sending…');
+
+      try {
+        const res = await fetch(IDEAS_ENDPOINT, {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form),
+        });
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        say('Sent. He’ll see it.', 'good');
+      } catch {
+        say('That didn’t send. Try again, or DM @lani_colors.', 'bad');
+      } finally {
+        send.disabled = false;
+      }
+    });
+
+    body.addEventListener('input', () => {
+      if (body.value.trim()) body.closest('.field').classList.remove('is-bad');
+    });
+  })();
 })();

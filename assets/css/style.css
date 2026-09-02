@@ -40,6 +40,10 @@
 
 * { box-sizing: border-box; }
 
+/* The UA's [hidden] rule loses to any class that sets `display` — which
+   silently left .info's full-screen scrim over the whole site. Settle it. */
+[hidden] { display: none !important; }
+
 /* Dope Bam has no lowercase, so every display-set element is uppercased.
    Suits a marker face anyway — release titles read as tags, not sentences. */
 .nav__mark, .hero__title, .ticker__rail, .sec__title, .feature__title,
@@ -136,6 +140,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .mark {
   position: relative; display: grid; place-items: center;
+  border: 0; padding: 0; font: inherit;
   width: 92px; height: 92px; border-radius: 50%;
   background: #170700; color: var(--flare);
   text-decoration: none;
@@ -160,6 +165,90 @@ button { font: inherit; color: inherit; cursor: pointer; }
   0%   { transform: scale(1);   opacity: .7; }
   100% { transform: scale(2.1); opacity: 0; }
 }
+
+/* ── who he is ─────────────────────────────────────────────
+   Opened by the cross. Sits above the gate on its own layer so
+   it survives the sheet draining away underneath it.        */
+.info {
+  position: fixed; inset: 0; z-index: 160;
+  display: grid; place-items: center;
+  padding: clamp(16px, 4vw, 40px);
+}
+.info__scrim {
+  position: absolute; inset: 0;
+  background: rgba(20, 6, 1, .68);
+  backdrop-filter: blur(10px) saturate(120%);
+  animation: fade .35s var(--ease);
+}
+.info__card {
+  position: relative;
+  width: min(580px, 100%);
+  max-height: min(86vh, 820px);
+  overflow-y: auto;
+  background: var(--void);
+  border: 1px solid var(--crust);
+  border-radius: 16px;
+  padding: clamp(26px, 4vw, 44px);
+  box-shadow: 0 50px 120px -30px rgba(0,0,0,.9), 0 0 90px -30px rgba(242,105,28,.55);
+  animation: infoIn .5s var(--ease);
+}
+@keyframes infoIn {
+  from { opacity: 0; transform: translateY(22px) scale(.97); }
+}
+
+.info__x {
+  position: absolute; top: 14px; right: 14px;
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid var(--crust); background: transparent;
+  color: var(--mute); font-size: 22px; line-height: 1;
+}
+.info__x:hover { border-color: var(--orange); color: var(--orange); }
+
+.info__cross {
+  width: 34px; height: 34px; fill: var(--orange); margin-bottom: 18px;
+  filter: drop-shadow(0 0 14px rgba(242,105,28,.6));
+}
+.info__name {
+  margin: 0 0 6px; font-family: var(--display);
+  font-size: clamp(34px, 6vw, 52px); line-height: .95;
+  letter-spacing: .01em; color: var(--tube); text-transform: uppercase;
+}
+.info__real {
+  margin: 0 0 26px; font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--amber);
+}
+.info__body p {
+  margin: 0 0 15px; font-size: 15px; line-height: 1.72; color: var(--ash);
+}
+.info__body em { color: var(--amber); font-style: normal; font-weight: 700; }
+
+.info__stats {
+  display: flex; flex-wrap: wrap; gap: 26px;
+  margin: 28px 0; padding: 20px 0;
+  border-block: 1px solid var(--crust);
+}
+.info__stats dt {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--rust); margin-bottom: 4px;
+}
+.info__stats dd {
+  margin: 0; font-family: var(--display); font-size: 21px;
+  color: var(--tube); text-transform: uppercase;
+}
+
+.info__links { display: flex; flex-wrap: wrap; gap: 10px; }
+.info__links .btn { padding: 11px 20px; font-size: 13px; }
+
+.info__pack {
+  display: inline-block; margin-top: 22px;
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--mute); text-decoration: none;
+  border-bottom: 1px solid var(--crust); padding-bottom: 3px;
+  transition: color .25s, border-color .25s;
+}
+.info__pack:hover { color: var(--orange); border-color: var(--orange); }
+.info__pack.is-pending { opacity: .55; cursor: default; }
+.info__pack.is-pending:hover { color: var(--mute); border-color: var(--crust); }
 
 .gate__note {
   margin: 0; min-height: 1.2em;
@@ -560,6 +649,52 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .plat:hover { color: var(--orange); padding-left: 14px; }
 .plat svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; }
 
+/* ── ideas ──────────────────────────────────────────────── */
+.ideas { position: relative; z-index: 1; padding: clamp(70px, 10vw, 130px) 0; }
+.ideas__wrap { padding: 0 var(--gut); max-width: 900px; }
+.ideas__lead {
+  margin: 0 0 34px; max-width: 52ch;
+  font-size: clamp(15px, 1.6vw, 18px); color: var(--mute);
+}
+
+.ideas__form { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.field--wide, .ideas__foot { grid-column: 1 / -1; }
+@media (max-width: 640px) { .ideas__form { grid-template-columns: 1fr; } }
+
+.field { display: grid; gap: 8px; }
+.field label {
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--rust);
+}
+.field .req { color: var(--orange); }
+.field input, .field textarea {
+  width: 100%; font: inherit; font-size: 15px; color: var(--ash);
+  background: rgba(242,105,28,.05);
+  border: 1px solid var(--crust); border-radius: 8px;
+  padding: 13px 15px; resize: vertical;
+  transition: border-color .25s, background .25s;
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--mute); opacity: .55; }
+.field input:focus, .field textarea:focus {
+  outline: none; border-color: var(--orange); background: rgba(242,105,28,.09);
+}
+.field.is-bad input, .field.is-bad textarea { border-color: #E2452A; }
+
+/* the honeypot must be reachable by bots and invisible to everyone else */
+.honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.ideas__foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.ideas__status { margin: 0; font-size: 13px; color: var(--mute); }
+.ideas__status.is-good { color: var(--amber); }
+.ideas__status.is-bad  { color: #F08A6E; }
+
+/* shown instead of the form when no endpoint is wired up yet */
+.ideas__fallback {
+  border: 1px solid var(--crust); border-radius: 12px;
+  padding: clamp(22px, 3vw, 30px);
+  background: rgba(242,105,28,.05);
+}
+.ideas__fallback p { margin: 0 0 18px; color: var(--ash); font-size: 15px; }
+
 /* ── footer ─────────────────────────────────────────────── */
 .foot {
   position: relative; z-index: 1;
@@ -692,4 +827,5 @@ body.has-player { padding-bottom: 84px; }
   .hero__blurb, .hero__cta { opacity: 1; }
   .card { opacity: 1; transform: none; }
   .gate__arrow::after, .mark__ring { animation: none; }
+  .info__card, .info__scrim { animation: none; }
 }

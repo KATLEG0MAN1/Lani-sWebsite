@@ -26,8 +26,8 @@
 <div class="gate" id="gate">
   <canvas class="gate__canvas" id="gateCanvas" aria-hidden="true"></canvas>
   <div class="gate__center">
-    <a class="mark" id="markDownload" href="assets/downloads/lani-colors.zip" download
-       aria-label="Download the pack">
+    <button class="mark" id="markInfo" type="button"
+            aria-haspopup="dialog" aria-label="About Lani Colors">
       <span class="mark__ring" aria-hidden="true"></span>
       <!-- the cross: his light tube stood upright, and the + that ends
            every track title on THANK GOD+ -->
@@ -35,8 +35,8 @@
         <rect x="20.5" y="4"  width="7"  height="40" rx="3.5"/>
         <rect x="7"    y="16" width="34" height="7"  rx="3.5"/>
       </svg>
-    </a>
-    <p class="gate__note" id="gateNote" role="status"></p>
+    </button>
+    <p class="gate__note" id="gateNote" role="status">Who is he?</p>
   </div>
   <div class="gate__hint" id="gateHint">
     <span class="gate__arrow" aria-hidden="true"></span>
@@ -44,6 +44,60 @@
   </div>
 </div>
 <div class="gate-scroll" id="gateScroll" aria-hidden="true"></div>
+
+<!-- ══ WHO HE IS ══ opened by the cross on the gate ══ -->
+<div class="info" id="info" hidden>
+  <div class="info__scrim" data-info-close></div>
+  <article class="info__card" role="dialog" aria-modal="true" aria-labelledby="infoName">
+    <button class="info__x" type="button" data-info-close aria-label="Close">&times;</button>
+
+    <svg class="info__cross" viewBox="0 0 48 48" aria-hidden="true">
+      <rect x="20.5" y="4"  width="7"  height="40" rx="3.5"/>
+      <rect x="7"    y="16" width="34" height="7"  rx="3.5"/>
+    </svg>
+
+    <h2 class="info__name" id="infoName">Lani Colors</h2>
+    <p class="info__real">Xolani Buyeye &nbsp;·&nbsp; Hip-Hop / Rap &nbsp;·&nbsp; South Africa</p>
+
+    <div class="info__body">
+      <p>
+        Lani Colors is the recording name of Xolani Buyeye, a South African
+        rapper and producer. Four full-length projects since 2022 —
+        <em>New Feel</em>, its twenty-track deluxe, <em>Everyone Is so Beautiful</em>,
+        and <em>THANK GOD+</em> — built almost entirely on his own terms.
+      </p>
+      <p>
+        The early records came out independently, released under his own name.
+        Since 2025 he has put music out through Tahoe Studios, where he has
+        described learning to structure a release properly: not just finishing
+        songs, but making something built to last a long time.
+      </p>
+      <p>
+        <em>THANK GOD+</em> landed in July 2026. Ten tracks, every title
+        punctuated with a cross.
+      </p>
+    </div>
+
+    <dl class="info__stats" id="infoStats">
+      <div><dt>Releases</dt><dd>—</dd></div>
+      <div><dt>Tracks</dt><dd>—</dd></div>
+      <div><dt>Active</dt><dd>—</dd></div>
+    </dl>
+
+    <div class="info__links">
+      <a class="btn btn--hot" href="https://open.spotify.com/artist/3Y5Nj3eww4wehm2XfT1vyj"
+         target="_blank" rel="noopener">Spotify</a>
+      <a class="btn" href="https://music.apple.com/us/artist/lani-colors/1660618648"
+         target="_blank" rel="noopener">Apple Music</a>
+      <a class="btn" href="https://www.instagram.com/lani_colors/"
+         target="_blank" rel="noopener">@lani_colors</a>
+    </div>
+
+    <a class="info__pack" id="packLink" href="assets/downloads/lani-colors.zip" download>
+      Download the pack
+    </a>
+  </article>
+</div>
 
 <!-- ══ the room: spotlight falloff + grain, tracks the cursor ══ -->
 <div class="room" aria-hidden="true">
@@ -59,6 +113,7 @@
     <a href="#latest">Latest</a>
     <a href="#releases">Releases</a>
     <a href="#listen">Listen</a>
+    <a href="#ideas">Ideas</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -156,6 +211,45 @@
           <span>Instagram</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ══ IDEAS ══ a way in for people who want to work with him ══ -->
+  <section class="ideas" id="ideas">
+    <div class="sec__head">
+      <h2 class="sec__title">Ideas</h2>
+      <span class="sec__rule"></span>
+    </div>
+
+    <div class="ideas__wrap">
+      <p class="ideas__lead">
+        Cover art, a verse, a video treatment, a beat, a show, a stupid idea
+        that might work — if you've got something for Lani, put it here.
+      </p>
+
+      <form class="ideas__form" id="ideasForm" novalidate>
+        <div class="field">
+          <label for="ideaName">Name</label>
+          <input id="ideaName" name="name" type="text" autocomplete="name" placeholder="Who's asking?">
+        </div>
+        <div class="field">
+          <label for="ideaContact">Email or @handle</label>
+          <input id="ideaContact" name="contact" type="text" placeholder="So he can come back to you">
+        </div>
+        <div class="field field--wide">
+          <label for="ideaBody">The idea <span class="req">*</span></label>
+          <textarea id="ideaBody" name="idea" rows="5" required
+                    placeholder="Say it plainly. He reads these."></textarea>
+        </div>
+
+        <!-- bots fill this in; people never see it -->
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="ideas__foot">
+          <button class="btn btn--hot" type="submit" id="ideaSend">Send it</button>
+          <p class="ideas__status" id="ideaStatus" role="status"></p>
+        </div>
+      </form>
     </div>
   </section>
 

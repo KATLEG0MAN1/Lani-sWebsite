@@ -12,8 +12,11 @@ stretches into tongues of liquid, thin runners form, and beads pinch off and
 fall. It is driven entirely by scroll position — swipe back down and the water
 pours back in. Drawn on a canvas in `assets/js/gate.js`.
 
-**The mark** links to `assets/downloads/lani-colors.zip`. Until that file exists
-it shows "Pack drops soon" instead of serving a 404 — see below.
+**The cross** opens a panel about him — who he is, the catalogue in numbers
+(pulled live from `data/releases.json`, so it never goes stale), and links out to
+Spotify, Apple Music and Instagram. The pack download lives at the bottom of that
+panel; until `assets/downloads/lani-colors.zip` exists it reads "Pack drops soon"
+rather than serving a 404.
 
 **The catalogue.** Everything under the gate is rendered from
 `data/releases.json`: 12 releases, 63 tracks, real cover art, filters, live
@@ -35,6 +38,37 @@ if it loads. Without it the CSS light carries the hero on its own.
 Drop the zip in with exactly that name and the mark on the gate starts serving
 it. Again no code change: `gate.js` does a `HEAD` request on load and only
 falls back to the "Pack drops soon" message when the file is missing.
+
+## The ideas box
+
+There is an **Ideas** section where people can send him something — cover art, a
+verse, a video treatment, a show. GitHub Pages is static hosting, so there is no
+server to receive a form; it has to post to a form service.
+
+Until one is wired up, the section shows a working route to his Instagram DMs
+rather than a form that quietly swallows what people write.
+
+### Turning it on
+
+Pick a service, then paste its endpoint into `IDEAS_ENDPOINT` at the top of
+`assets/js/main.js`. That is the only change needed — the form, validation, spam
+honeypot and status messages are already built.
+
+```js
+const IDEAS_ENDPOINT = 'https://formsubmit.co/your@email.com';
+```
+
+Two that work with plain static hosting:
+
+- **[FormSubmit](https://formsubmit.co)** — no signup. The endpoint is just
+  `https://formsubmit.co/` plus his email. Submissions arrive as email. The first
+  one triggers a confirmation link he has to click once.
+- **[Formspree](https://formspree.io)** — needs a free account, gives a dashboard
+  and 50 submissions a month on the free tier. Endpoint looks like
+  `https://formspree.io/f/xxxxxxx`.
+
+Both accept the `FormData` POST the site already sends, and both respect the
+`_honey` honeypot field for spam.
 
 ## Refreshing the catalogue
 

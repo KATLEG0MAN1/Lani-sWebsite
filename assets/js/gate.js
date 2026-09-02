@@ -14,7 +14,7 @@
   const canvas = document.getElementById('gateCanvas');
   const spacer = document.getElementById('gateScroll');
   const note   = document.getElementById('gateNote');
-  const mark   = document.getElementById('markDownload');
+  const mark   = document.getElementById('markInfo');
   const nav    = document.getElementById('nav');
   if (!gate || !canvas) return;
 
@@ -256,21 +256,46 @@
   shownP = p;
   requestAnimationFrame(frame);
 
-  /* ── the mark ────────────────────────────────────────────
-     Points at the pack. Until that zip is committed, say so
-     rather than handing over a 404.                          */
-  if (mark) {
-    let ready = false;
-    fetch(mark.getAttribute('href'), { method: 'HEAD' })
-      .then((r) => { ready = r.ok; })
-      .catch(() => { ready = false; });
+  /* ── the cross opens the story ───────────────────────────
+     Who he is, before anything is asked of the visitor.      */
+  const info = document.getElementById('info');
+  const pack = document.getElementById('packLink');
+  let lastFocus = null;
 
-    mark.addEventListener('click', (e) => {
-      if (ready) return;                       // let the download happen
-      e.preventDefault();
-      note.textContent = 'Pack drops soon';
-      clearTimeout(mark._t);
-      mark._t = setTimeout(() => { note.textContent = ''; }, 2400);
+  const openInfo = () => {
+    lastFocus = document.activeElement;
+    info.hidden = false;
+    document.body.style.overflow = 'hidden';   // hold the sheet still behind it
+    info.querySelector('.info__x').focus();
+  };
+
+  const closeInfo = () => {
+    info.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  };
+
+  if (mark && info) {
+    mark.addEventListener('click', openInfo);
+    info.addEventListener('click', (e) => {
+      if (e.target.closest('[data-info-close]')) closeInfo();
     });
+    addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !info.hidden) closeInfo();
+    });
+  }
+
+  /* The pack link only offers itself once the zip is actually there —
+     a dead download reads worse than an honest "not yet". */
+  if (pack) {
+    const pending = () => {
+      pack.classList.add('is-pending');
+      pack.textContent = 'Pack drops soon';
+      pack.removeAttribute('href');
+      pack.removeAttribute('download');
+    };
+    fetch(pack.getAttribute('href'), { method: 'HEAD' })
+      .then((r) => { if (!r.ok) pending(); })
+      .catch(pending);
   }
 })();
