@@ -1,0 +1,640 @@
+{
+  "artist": {
+    "name": "Lani Colors",
+    "spotifyArtist": "3Y5Nj3eww4wehm2XfT1vyj",
+    "appleArtist": "https://music.apple.com/us/artist/lani-colors/1660618648"
+  },
+  "updated": "2026-09-02",
+  "releases": [
+    {
+      "id": 6783368889,
+      "slug": "thank-god",
+      "title": "THANK GOD+",
+      "artist": "Lani Colors",
+      "type": "album",
+      "year": "2026",
+      "released": "2026-07-03",
+      "trackCount": 10,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/thank-god.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/d0/c4/92d0c412-e080-07ce-9afb-e33b30816e64/tah021.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/thank-god/6783368889",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "THE PRAYER+",
+          "seconds": 259,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/7c/eb/db7ceb77-da61-5f41-afeb-26f97897cf2a/mzaf_9310814992297944552.plus.aac.p.m4a"
+        },
+        {
+          "n": 2,
+          "title": "SNOW+",
+          "seconds": 239,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/82/90/148290b9-0ece-0a57-d224-0761b15f27f3/mzaf_15684275142088587778.plus.aac.p.m4a"
+        },
+        {
+          "n": 3,
+          "title": "CHILDREN OF THE WOLVES+",
+          "seconds": 148,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/a7/41/cba7415c-e7a7-904c-4cda-a10f756a9d2e/mzaf_12344221900658821666.plus.aac.p.m4a"
+        },
+        {
+          "n": 4,
+          "title": "GO (ON MA SOUL)+",
+          "seconds": 172,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/b8/f2/86b8f29d-853f-ab33-c34c-06a54bafd870/mzaf_12632327605459233294.plus.aac.p.m4a"
+        },
+        {
+          "n": 5,
+          "title": "DO YOU KNOW HOW TO DANCE+ (feat. Hlamsy)",
+          "seconds": 214,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/eb/9f/feeb9f47-9f9c-0f9d-8194-4c582190c31e/mzaf_6978248517612524565.plus.aac.p.m4a"
+        },
+        {
+          "n": 6,
+          "title": "JOHNNY BLAZE+",
+          "seconds": 165,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/74/ed/9874edc3-11f9-6ce9-a5e3-1aa1260c3778/mzaf_7335467534898995263.plus.aac.p.m4a"
+        },
+        {
+          "n": 7,
+          "title": "NEVER FORGET YOU+",
+          "seconds": 194,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/0c/77/860c77dd-b159-af5c-bd8d-b029819374c0/mzaf_11388638135395459595.plus.aac.p.m4a"
+        },
+        {
+          "n": 8,
+          "title": "EVERY SEASON+",
+          "seconds": 161,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/61/f4/9c61f4bd-0c1d-7fc5-164c-9010b51287ef/mzaf_10783743683210157386.plus.aac.p.m4a"
+        },
+        {
+          "n": 9,
+          "title": "I CAN NEVER STOP+",
+          "seconds": 162,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/58/30/0e5830a1-41e7-8af9-5418-04b2836ef25b/mzaf_9560442139575181192.plus.aac.p.m4a"
+        },
+        {
+          "n": 10,
+          "title": "MAMA+",
+          "seconds": 227,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/f7/66/01f76606-3fc6-fb63-a885-f98d9286532c/mzaf_7796795383271863444.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 6778447599,
+      "slug": "i-can-never-stop",
+      "title": "I CAN NEVER STOP+",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-06-26",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/i-can-never-stop.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/af/cc/8dafcc58-2ef4-dff7-1110-35b522c9ef47/tah021s.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/i-can-never-stop-single/6778447599",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "I CAN NEVER STOP+",
+          "seconds": 162,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/48/64/c848649f-4cf6-5094-ced4-45281397c600/mzaf_8202828544925154179.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1894526057,
+      "slug": "unbound",
+      "title": "Unbound (feat. Lani Colors)",
+      "artist": "SanDrew",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-04-25",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": true,
+      "label": "SanDrew",
+      "cover": "assets/covers/unbound.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/3c/16/4c3c16fd-4031-e95e-b607-b23249d5775b/5063960588686_cover.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/unbound-feat-lani-colors-single/1894526057",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "Unbound (feat. Lani Colors)",
+          "seconds": 162,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/ae/00/61ae0084-279a-3d02-eda5-9c6c8c146ba3/mzaf_1296404962132173961.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1891733497,
+      "slug": "shack-raised",
+      "title": "SHACK RAISED (feat. Mojahid)",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-04-24",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/shack-raised.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/5e/94/c85e946e-4315-6c9e-ee3c-c018e1045d23/tah020.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/shack-raised-feat-mojahid-single/1891733497",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "SHACK RAISED (feat. Mojahid)",
+          "seconds": 134,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/39/e6/2f39e637-91c4-d12e-abc9-fda43b5a62d4/mzaf_5209865269999080257.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1891733717,
+      "slug": "calm-down",
+      "title": "CALM DOWN",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-04-17",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/calm-down.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d2/33/d5/d233d5b6-2f5f-dd2d-62c1-3d90530aefe7/tah019.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/calm-down-single/1891733717",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "CALM DOWN",
+          "seconds": 117,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/ce/0c/6fce0cda-e5f2-8314-2f92-d9af61e67e32/mzaf_8403369949525870923.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1886166818,
+      "slug": "jump-out-da-roof",
+      "title": "JUMP OUT DA ROOF",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-04-10",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/jump-out-da-roof.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/d3/bd/68d3bd23-3edf-64e1-eaf5-b75a9f6f9bfb/tah017.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/jump-out-da-roof-single/1886166818",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "JUMP OUT DA ROOF",
+          "seconds": 134,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/f1/fc/36f1fcb5-27c7-c080-33e7-bfea31d3776f/mzaf_12440583657604532601.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1886167162,
+      "slug": "wanna-rage",
+      "title": "WANNA RAGE",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2026",
+      "released": "2026-04-03",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/wanna-rage.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/1c/1e/161c1e04-7d19-ca7e-e52c-bb22227ee0cf/tah016.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/wanna-rage-single/1886167162",
+        "spotify": "https://open.spotify.com/album/183P8VfWpNTNlk8beXhYDD"
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "WANNA RAGE",
+          "seconds": 109,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/9f/99/ba9f99fd-cf58-e92d-989a-4d25f16f9101/mzaf_17381165030407211682.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1858934749,
+      "slug": "ain-t-nothing",
+      "title": "AIN'T NOTHING+ (feat. Big Jay & Tahoe Studios)",
+      "artist": "Lani Colors",
+      "type": "single",
+      "year": "2025",
+      "released": "2025-12-19",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": false,
+      "label": "Tahoe Studios",
+      "cover": "assets/covers/ain-t-nothing.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ca/c4/58/cac4582a-9ce1-a44c-21fb-c4126fe04897/tah010s1.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/aint-nothing-feat-big-jay-tahoe-studios-single/1858934749",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "AIN'T NOTHING+ (feat. Big Jay & Tahoe Studios)",
+          "seconds": 173,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/61/a5/0a61a57e-5bb7-998d-3314-6317331b9b49/mzaf_3943934079078993177.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1716690117,
+      "slug": "everyone-is-so-beautiful",
+      "title": "Everyone Is so Beautiful",
+      "artist": "Lani Colors",
+      "type": "album",
+      "year": "2023",
+      "released": "2023-11-18",
+      "trackCount": 10,
+      "genre": "Hip-Hop/Rap",
+      "explicit": true,
+      "label": "Xolani Buyeye",
+      "cover": "assets/covers/everyone-is-so-beautiful.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c3/c8/0f/c3c80fb0-7982-35aa-b732-193a0ccb5e68/5063413212533_cover.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/everyone-is-so-beautiful/1716690117",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "Coinn",
+          "seconds": 142,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e3/8e/4e/e38e4e04-2681-7a4d-98cf-206862eafe53/mzaf_17619264224059687246.plus.aac.p.m4a"
+        },
+        {
+          "n": 2,
+          "title": "Pineal",
+          "seconds": 184,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/7e/af/a9/7eafa924-961b-71ad-415e-fb9779d0feee/mzaf_10288081355163052008.plus.aac.p.m4a"
+        },
+        {
+          "n": 3,
+          "title": "Buda",
+          "seconds": 290,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a8/ad/e4/a8ade49d-9ef1-d0e5-7840-1b7de032a473/mzaf_10020026965427911026.plus.aac.p.m4a"
+        },
+        {
+          "n": 4,
+          "title": "Hover",
+          "seconds": 208,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/32/c4/e9/32c4e9dd-741d-da20-9e1f-bbad36cb4cba/mzaf_7064695855693751875.plus.aac.p.m4a"
+        },
+        {
+          "n": 5,
+          "title": "Danga",
+          "seconds": 128,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/6a/69/75/6a697546-6121-5d11-152a-000e15961716/mzaf_11099705040240486705.plus.aac.p.m4a"
+        },
+        {
+          "n": 6,
+          "title": "Awaken Togetha",
+          "seconds": 116,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/36/f3/6f/36f36fa4-b38f-74e8-dde4-ce4aadbf41b8/mzaf_17891630151083611533.plus.aac.p.m4a"
+        },
+        {
+          "n": 7,
+          "title": "Feed Me More",
+          "seconds": 159,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/96/bb/a3/96bba310-9541-b9a1-1411-29171d4f8218/mzaf_14472349644966129782.plus.aac.p.m4a"
+        },
+        {
+          "n": 8,
+          "title": "Do What I Do (feat. Decided X El.Diablo)",
+          "seconds": 134,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/78/a6/63/78a66372-3f79-0d51-f781-ec68d43a0b28/mzaf_13603662072801867101.plus.aac.p.m4a"
+        },
+        {
+          "n": 9,
+          "title": "Jiren",
+          "seconds": 181,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/59/d5/d8/59d5d89a-1d50-2d5f-3832-de14d88dc797/mzaf_15825067166133956708.plus.aac.p.m4a"
+        },
+        {
+          "n": 10,
+          "title": "Earth Is Where You Are Now",
+          "seconds": 193,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b8/d3/40/b8d340c8-3165-077b-11e2-4e8c776e4aa3/mzaf_12166087260738188305.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1703921143,
+      "slug": "dizruptor",
+      "title": "Dizruptor (feat. Decided X El.Diablo)",
+      "artist": "Lani Colors & PROD BILLIEON",
+      "type": "single",
+      "year": "2023",
+      "released": "2023-08-25",
+      "trackCount": 1,
+      "genre": "Hip-Hop/Rap",
+      "explicit": true,
+      "label": "Xolani Buyeye",
+      "cover": "assets/covers/dizruptor.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/30/5c/3b/305c3b41-5146-3790-5147-79c2a36f38e3/5063346427776_cover.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/dizruptor-feat-decided-x-el-diablo-single/1703921143",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "Dizruptor (feat. Decided X El.Diablo)",
+          "seconds": 202,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/04/2a/d2/042ad238-4bb8-0b8c-b963-d461c8384fe8/mzaf_4160357251581609327.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1679668787,
+      "slug": "new-feel-deluxe",
+      "title": "New Feel (Deluxe)",
+      "artist": "Lani Colors",
+      "type": "album",
+      "year": "2023",
+      "released": "2023-03-05",
+      "trackCount": 20,
+      "genre": "Hip-Hop/Rap",
+      "explicit": true,
+      "label": "Xolani Buyeye",
+      "cover": "assets/covers/new-feel-deluxe.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/38/7c/24/387c24a5-f5bc-cb57-1f19-29f6dd134012/5063161908610_cover.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/new-feel-deluxe/1679668787",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "Come Alive (Space to Breath)",
+          "seconds": 157,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/31/9c/4b/319c4b06-f38b-4afd-142f-01867e63fd50/mzaf_5854270775730000973.plus.aac.p.m4a"
+        },
+        {
+          "n": 2,
+          "title": "6 (feat. Kay Cee)",
+          "seconds": 142,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/37/3c/35/373c35e5-1987-6656-4f3b-d1811bdd7230/mzaf_16799079736020854271.plus.aac.p.m4a"
+        },
+        {
+          "n": 3,
+          "title": "Interlude 1",
+          "seconds": 137,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f6/e2/0a/f6e20af8-735e-f5c6-5d30-5b0951f7b087/mzaf_13828139997975156263.plus.aac.p.m4a"
+        },
+        {
+          "n": 4,
+          "title": "Scars I Never Treated",
+          "seconds": 220,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c2/9f/e9/c29fe9d6-f7df-2cba-9361-e5ee020197ae/mzaf_4675203148382326339.plus.aac.p.m4a"
+        },
+        {
+          "n": 5,
+          "title": "Hiro",
+          "seconds": 206,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/33/0c/d9/330cd974-c00b-51c6-7d73-cffe46a28ff1/mzaf_9573581779959359550.plus.aac.p.m4a"
+        },
+        {
+          "n": 6,
+          "title": "Unruly (feat. H.U.E)",
+          "seconds": 225,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/f4/9a/4df49abb-e1b5-aa68-f997-f144be26dc17/mzaf_13803889125515438273.plus.aac.p.m4a"
+        },
+        {
+          "n": 7,
+          "title": "No More Sorry",
+          "seconds": 278,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8b/98/74/8b9874fe-6de2-7cda-218a-34e307f55077/mzaf_12129722767547658799.plus.aac.p.m4a"
+        },
+        {
+          "n": 8,
+          "title": "All My Heroes Are Dead",
+          "seconds": 259,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/0b/43/630b43e2-61e1-0275-a793-734b94baac7f/mzaf_5058365214693945007.plus.aac.p.m4a"
+        },
+        {
+          "n": 9,
+          "title": "Ku",
+          "seconds": 155,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/51/7b/49/517b4955-17ed-c244-2e06-0024ea84002e/mzaf_9456517806627148817.plus.aac.p.m4a"
+        },
+        {
+          "n": 10,
+          "title": "Fallen Leaf",
+          "seconds": 102,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/52/3e/6b/523e6bc4-ba2c-be15-095f-4cc9829b5b67/mzaf_4353912794427093354.plus.aac.p.m4a"
+        },
+        {
+          "n": 11,
+          "title": "Out My Control",
+          "seconds": 167,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d0/a9/13/d0a9133c-8806-c4a7-9e63-2b13f2f86be8/mzaf_2011637215220786483.plus.aac.p.m4a"
+        },
+        {
+          "n": 12,
+          "title": "6.18.22",
+          "seconds": 131,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ee/91/9a/ee919a4d-c041-6b6f-1114-7bccd50661bb/mzaf_6559991447326335689.plus.aac.p.m4a"
+        },
+        {
+          "n": 13,
+          "title": "Rise / Im Not Myth (feat. Freaky D, May Briizy & Hlamsy)",
+          "seconds": 348,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/2b/16/4a/2b164a15-3ec4-80b7-171b-85fac4058127/mzaf_14604521133095144794.plus.aac.p.m4a"
+        },
+        {
+          "n": 14,
+          "title": "Dead Man",
+          "seconds": 139,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/b8/70/4f/b8704fb5-6c8b-4fe1-ca6a-20fbbd57be80/mzaf_17009569909041766798.plus.aac.p.m4a"
+        },
+        {
+          "n": 15,
+          "title": "Wanted You",
+          "seconds": 100,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/54/c5/4d54c5f0-1983-dbea-45ce-1453a0003cd9/mzaf_13356828475129019081.plus.aac.p.m4a"
+        },
+        {
+          "n": 16,
+          "title": "Bloom",
+          "seconds": 200,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/42/a3/c9/42a3c9a3-f97f-26b7-96a9-910a96455d0a/mzaf_6787511171481822696.plus.aac.p.m4a"
+        },
+        {
+          "n": 17,
+          "title": "Angry Little Childen",
+          "seconds": 131,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/7a/38/06/7a380650-69c6-106b-bffb-c47f72440524/mzaf_11230544707309039243.plus.aac.p.m4a"
+        },
+        {
+          "n": 18,
+          "title": "The Plan (feat. Freaky D)",
+          "seconds": 201,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ba/83/73/ba837367-73b5-54c0-ba2f-da5e0ed51fd6/mzaf_5950901562260245755.plus.aac.p.m4a"
+        },
+        {
+          "n": 19,
+          "title": "Cry If You Want Too",
+          "seconds": 164,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/bc/14/a5/bc14a5fd-a0c5-1a98-e25d-4c50791d796d/mzaf_7848325784684645799.plus.aac.p.m4a"
+        },
+        {
+          "n": 20,
+          "title": "The Scenario",
+          "seconds": 213,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/15/33/9215333b-c664-9a81-3566-17166be35bda/mzaf_10716119261381804482.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": 1660618470,
+      "slug": "new-feel",
+      "title": "New Feel",
+      "artist": "Lani Colors",
+      "type": "album",
+      "year": "2022",
+      "released": "2022-12-23",
+      "trackCount": 15,
+      "genre": "Alternative",
+      "explicit": true,
+      "label": "Lani Colors",
+      "cover": "assets/covers/new-feel.jpg",
+      "coverRemote": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/91/7d/96/917d963c-1ecb-e17b-3803-998ea2fd1ff0/5063161502160_cover.jpg/1400x1400bb.jpg",
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/new-feel/1660618470",
+        "spotify": null
+      },
+      "tracks": [
+        {
+          "n": 1,
+          "title": "Come Alive (feat. Young Baller)",
+          "seconds": 155,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d1/20/f8/d120f8b5-918d-3fae-1b72-02766fe259be/mzaf_17422385799009846710.plus.aac.p.m4a"
+        },
+        {
+          "n": 2,
+          "title": "What Is Mine",
+          "seconds": 125,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/44/53/ed/4453ed19-332a-4a4b-10eb-6464a00502b5/mzaf_11756117281011690028.plus.aac.p.m4a"
+        },
+        {
+          "n": 3,
+          "title": "Scars I Never Treated",
+          "seconds": 220,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7d/ff/37/7dff375f-d748-2bd1-5ed5-5a81f2df6b61/mzaf_12666585405188984657.plus.aac.p.m4a"
+        },
+        {
+          "n": 4,
+          "title": "Unruly (feat. H.U.E)",
+          "seconds": 225,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/1d/05/a3/1d05a32f-b537-48f1-06e1-22172ff6c9b3/mzaf_17232933283365843127.plus.aac.p.m4a"
+        },
+        {
+          "n": 5,
+          "title": "No More Sorry",
+          "seconds": 278,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ac/3c/8b/ac3c8b27-ad43-4a8a-eac6-c8ea34c75e6b/mzaf_7711190057275783329.plus.aac.p.m4a"
+        },
+        {
+          "n": 6,
+          "title": "Ku",
+          "seconds": 155,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1d/9b/bb/1d9bbb97-c8b1-32c4-c644-59aa740a81e1/mzaf_7688957938706179746.plus.aac.p.m4a"
+        },
+        {
+          "n": 7,
+          "title": "Fallen Leaf",
+          "seconds": 102,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/23/0b/de/230bdebe-c86d-f901-5129-4c6366411e15/mzaf_2854575028547721350.plus.aac.p.m4a"
+        },
+        {
+          "n": 8,
+          "title": "Out My Control",
+          "seconds": 167,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/0d/e8/81/0de88101-9b12-04c4-8972-89f69335299f/mzaf_9430458255229069674.plus.aac.p.m4a"
+        },
+        {
+          "n": 9,
+          "title": "6.18.22",
+          "seconds": 131,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/de/de/f3/dedef3dd-13b9-1dc7-8c1e-26198d7a3c16/mzaf_10789308198048761709.plus.aac.p.m4a"
+        },
+        {
+          "n": 10,
+          "title": "Dead Man",
+          "seconds": 138,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/67/ef/86/67ef86d6-73a2-fbc0-1f41-9064104c2c5b/mzaf_11060982727593789731.plus.aac.p.m4a"
+        },
+        {
+          "n": 11,
+          "title": "Wanted You",
+          "seconds": 99,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7e/dd/ee/7eddeee3-47b2-3297-2ec9-463eab7da5d8/mzaf_8112481260869514048.plus.aac.p.m4a"
+        },
+        {
+          "n": 12,
+          "title": "Bloom",
+          "seconds": 218,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/21/24/03/212403f0-2d58-75a9-8855-17ddaf99a2fd/mzaf_9283173725410310105.plus.aac.p.m4a"
+        },
+        {
+          "n": 13,
+          "title": "Angry Little Childen",
+          "seconds": 131,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d7/24/fc/d724fc81-0e1f-a768-c51a-1a126931368b/mzaf_3792022170888594776.plus.aac.p.m4a"
+        },
+        {
+          "n": 14,
+          "title": "Cry If You Want Too",
+          "seconds": 164,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/10/29/51/102951b9-8915-ef37-84a5-1cc5d1a4d2ba/mzaf_17568041908678254831.plus.aac.p.m4a"
+        },
+        {
+          "n": 15,
+          "title": "The Scenario",
+          "seconds": 218,
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/6c/22/4d/6c224d6b-5a06-0644-1a90-6e3f5b47d6f1/mzaf_2399966953399106616.plus.aac.p.m4a"
+        }
+      ]
+    }
+  ]
+}

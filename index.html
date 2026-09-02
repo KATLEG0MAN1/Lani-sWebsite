@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lani Colors — Official</title>
+<meta name="description" content="Official site of Lani Colors. Hip-hop out of Tahoe Studios. THANK GOD+ out now — stream the full catalogue.">
+<meta name="theme-color" content="#F2691C">
+<meta property="og:title" content="Lani Colors — Official">
+<meta property="og:description" content="THANK GOD+ out now. Stream the full catalogue.">
+<meta property="og:image" content="assets/covers/thank-god.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══ THE GATE ══
+     A full sheet of his orange. Swipe up and it drains off the top
+     of the screen like water pouring away. The canvas is the liquid
+     edge; the div behind it is the body of the sheet. ══ -->
+<div class="gate" id="gate">
+  <canvas class="gate__canvas" id="gateCanvas" aria-hidden="true"></canvas>
+  <div class="gate__center">
+    <a class="mark" id="markDownload" href="assets/downloads/lani-colors.zip" download
+       aria-label="Download the pack">
+      <span class="mark__ring" aria-hidden="true"></span>
+      <!-- the cross: his light tube stood upright, and the + that ends
+           every track title on THANK GOD+ -->
+      <svg class="mark__glyph" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="20.5" y="4"  width="7"  height="40" rx="3.5"/>
+        <rect x="7"    y="16" width="34" height="7"  rx="3.5"/>
+      </svg>
+    </a>
+    <p class="gate__note" id="gateNote" role="status"></p>
+  </div>
+  <div class="gate__hint" id="gateHint">
+    <span class="gate__arrow" aria-hidden="true"></span>
+    Swipe up
+  </div>
+</div>
+<div class="gate-scroll" id="gateScroll" aria-hidden="true"></div>
+
+<!-- ══ the room: spotlight falloff + grain, tracks the cursor ══ -->
+<div class="room" aria-hidden="true">
+  <div class="room__spot" id="spot"></div>
+  <div class="room__grain"></div>
+</div>
+
+<a class="skip" href="#releases">Skip to releases</a>
+
+<header class="nav" id="nav">
+  <a class="nav__mark" href="#top"><span class="nav__bar"></span>LANI COLORS</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#latest">Latest</a>
+    <a href="#releases">Releases</a>
+    <a href="#listen">Listen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero__tube"></div>
+    <div class="hero__figure" id="heroFigure"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow"><span class="dot"></span>Hip-Hop / Rap &nbsp;·&nbsp; Tahoe Studios</p>
+      <h1 class="hero__title">
+        <span class="line"><span>LANI</span></span>
+        <span class="line"><span>COLORS</span></span>
+      </h1>
+      <p class="hero__blurb">
+        Independent. Structured. Built to last a long time.
+        <em>THANK GOD+</em> — ten tracks, out now.
+      </p>
+      <div class="hero__cta">
+        <button class="btn btn--hot" id="playLatest" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Play THANK GOD+
+        </button>
+        <a class="btn" href="#releases">Full catalogue</a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span></span>scroll</div>
+  </section>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker" aria-hidden="true"><div class="ticker__rail" id="tickerRail"></div></div>
+
+  <!-- ══ LATEST ══ -->
+  <section class="latest" id="latest">
+    <div class="sec__head">
+      <h2 class="sec__title">Latest</h2>
+      <span class="sec__rule"></span>
+    </div>
+    <div class="latest__body" id="latestBody">
+      <p class="loading">Loading catalogue…</p>
+    </div>
+  </section>
+
+  <!-- ══ RELEASES ══ -->
+  <section class="releases" id="releases">
+    <div class="sec__head">
+      <h2 class="sec__title">Releases</h2>
+      <span class="sec__rule"></span>
+      <span class="sec__count" id="relCount"></span>
+    </div>
+
+    <div class="controls">
+      <div class="chips" role="tablist" aria-label="Filter releases">
+        <button class="chip is-on" data-filter="all"    role="tab" aria-selected="true">All</button>
+        <button class="chip"       data-filter="album"  role="tab" aria-selected="false">Albums</button>
+        <button class="chip"       data-filter="single" role="tab" aria-selected="false">Singles</button>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Search releases &amp; tracks…" aria-label="Search releases and tracks" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Nothing matches that. <button class="linkish" id="clearSearch" type="button">Clear</button></p>
+  </section>
+
+  <!-- ══ LISTEN ══ -->
+  <section class="listen" id="listen">
+    <div class="sec__head">
+      <h2 class="sec__title">Listen</h2>
+      <span class="sec__rule"></span>
+    </div>
+    <div class="listen__grid">
+      <div class="listen__embed">
+        <!-- sandboxed without allow-top-navigation: left unpenned, the embed
+             will navigate the whole page out to open.spotify.com -->
+        <iframe title="Lani Colors on Spotify" style="border-radius:14px"
+          src="https://open.spotify.com/embed/artist/3Y5Nj3eww4wehm2XfT1vyj?theme=0"
+          width="100%" height="420" frameborder="0" loading="lazy"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+      <div class="listen__aside">
+        <p class="listen__lead">Previews here are 30-second clips. For the whole thing, go where it lives.</p>
+        <a class="plat" href="https://open.spotify.com/artist/3Y5Nj3eww4wehm2XfT1vyj" target="_blank" rel="noopener">
+          <span>Spotify</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+        <a class="plat" href="https://music.apple.com/us/artist/lani-colors/1660618648" target="_blank" rel="noopener">
+          <span>Apple Music</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+        <a class="plat" href="https://www.instagram.com/lani_colors/" target="_blank" rel="noopener">
+          <span>Instagram</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <footer class="foot" id="contact">
+    <div class="foot__tube"></div>
+    <div class="foot__grid">
+      <div>
+        <h2 class="foot__name">LANI COLORS</h2>
+        <p class="foot__meta">Hip-Hop / Rap · Tahoe Studios · South Africa</p>
+      </div>
+      <div class="foot__cols">
+        <div>
+          <h3>Bookings &amp; everything else</h3>
+          <a href="https://www.instagram.com/lani_colors/" target="_blank" rel="noopener">DM @lani_colors</a>
+        </div>
+        <div>
+          <h3>Catalogue</h3>
+          <span id="footCount">—</span>
+        </div>
+        <div>
+          <h3>Updated</h3>
+          <span id="footUpdated">—</span>
+        </div>
+      </div>
+    </div>
+    <p class="foot__fine">
+      Artwork and audio previews © their respective rights holders, served from Apple Music.
+    </p>
+  </footer>
+
+</main>
+
+<!-- ══ DETAIL PANEL ══ -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet__scrim" data-close></div>
+  <aside class="sheet__panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <button class="sheet__x" type="button" data-close aria-label="Close">&times;</button>
+    <div class="sheet__body" id="sheetBody"></div>
+  </aside>
+</div>
+
+<!-- ══ PLAYER: the tube becomes the seek bar ══ -->
+<div class="player" id="player" hidden>
+  <div class="player__seek" id="seek" role="slider" tabindex="0"
+       aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="player__fill" id="seekFill"></div>
+  </div>
+  <div class="player__row">
+    <img class="player__art" id="pArt" alt="" width="52" height="52">
+    <div class="player__meta">
+      <p class="player__track" id="pTrack">—</p>
+      <p class="player__from" id="pFrom">—</p>
+    </div>
+    <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="player__ctrls">
+      <button id="pPrev" type="button" aria-label="Previous track"><svg viewBox="0 0 24 24"><path d="M7 6v12M19 6l-9 6 9 6z"/></svg></button>
+      <button id="pPlay" class="is-primary" type="button" aria-label="Play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+      <button id="pNext" type="button" aria-label="Next track"><svg viewBox="0 0 24 24"><path d="M17 6v12M5 6l9 6-9 6z"/></svg></button>
+    </div>
+    <span class="player__time" id="pTime">0:00 / 0:30</span>
+    <button class="player__x" id="pClose" type="button" aria-label="Close player">&times;</button>
+  </div>
+</div>
+
+<script src="assets/js/gate.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
